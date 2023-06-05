@@ -1,0 +1,19 @@
+.watch {
+    background-color: var(--main-color);
+  width: 100%;
+  height: 100vh;
+  .back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

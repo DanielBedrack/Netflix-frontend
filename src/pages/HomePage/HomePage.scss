@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+
+.home{
+    background-color: var(--main-color);
+    color:white;
+    overflow: hidden;
+
+    .list{
+        margin-top: 25px;
+        margin-bottom: 30px;
+
+    }
+}

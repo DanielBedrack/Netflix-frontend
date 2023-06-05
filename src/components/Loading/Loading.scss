@@ -1,0 +1,12 @@
+.loading-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:red;
+    margin: 25px;
+    .lable{
+        margin-left: 25px;
+    }
+}
