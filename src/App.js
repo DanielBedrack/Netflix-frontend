@@ -1,4 +1,3 @@
-import logo from './logo.svg'
 import './App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage/HomePage'
@@ -7,6 +6,7 @@ import RegisterPage from './pages/RegisterPage/RegisterPage'
 import WatchPage from './pages/WatchPage/WatchPage'
 import DetailsPage from './pages/Details/DetailsPage'
 import SearchPage from './pages/SearchPage/SearchPage'
+import MyList from './pages/My-List/MyList'
 
 function App () {
   return (
@@ -21,6 +21,7 @@ function App () {
           <Route exact path='/watch/:_id' element={<WatchPage />} />
           <Route exact path='/details/:_id' element={<DetailsPage />} />
           <Route exact path='/search' element={<SearchPage />} />
+          <Route exact path='/my-list' element={<MyList />} />
 
         </Routes>
       </BrowserRouter>

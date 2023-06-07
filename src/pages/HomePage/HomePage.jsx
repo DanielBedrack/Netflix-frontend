@@ -47,6 +47,18 @@ function HomePage ({ type }) {
       navigate('/login?redirect=/')
     }
   }, [user, navigate])
+
+  useEffect(() => {
+    const getMyList = async() => {
+      const res = await axios.get('user/get-items', {
+        headers: { authorization: `Bearer ${user.token}` }
+      })
+      console.log(res.data)
+      //save it somewhere;
+    }
+    getMyList()
+  },[])
+
   return (
     <div className='home'>
       <Navbar></Navbar>
@@ -56,6 +68,9 @@ function HomePage ({ type }) {
       ) : error ? (
         <Error error={error}></Error>
       ) : (
+        //give it aa <List>
+        //{title: "mylist", contents: list from api}
+        // *** adding the list from back into front ****       
         lists.map((item, i) => <List className="list" key={i} list={item}></List>)
       )}
     </div>
