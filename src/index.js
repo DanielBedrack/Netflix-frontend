@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { AuthContextProvider } from './auth/authContext';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://netflix-backend-vrf3.onrender.com/api/';
+axios.defaults.baseURL = 'https://backend-streaming.onrender.com/api/';
 //axios.defaults.baseURL = 'http://localhost:5000/api/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
