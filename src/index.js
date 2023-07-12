@@ -7,7 +7,7 @@ import { AuthContextProvider } from './auth/authContext';
 import axios from 'axios';
 
 axios.defaults.baseURL = 'https://backend-streaming.onrender.com/api/';
-//axios.defaults.baseURL = 'http://localhost:5000/api/';
+//axios.defaults.baseURL = 'http://localhost:6000/api/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
