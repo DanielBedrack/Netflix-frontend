@@ -35,7 +35,7 @@
     color: #fff;
     form {
       width: 300px;
-      height: 300px;
+      height: 400px;
       padding: 30px;
       border-radius: 5px;
       background-color: var(--main-color);
@@ -43,11 +43,14 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      p {
+        margin: 0;
+      }
 
       input {
         height: 40px;
         border-radius: 5px;
-
+        margin: 10px;
         padding-left: 10px;
         border: none;
         &::placeholder {
@@ -64,15 +67,14 @@
         font-weight: 500;
         cursor: pointer;
       }
-      span{
-        color:lightgray;
-        .link-signin{
-            text-decoration: underline;
-
+      span {
+        color: lightgray;
+        .link-signin {
+          text-decoration: underline;
         }
 
-        .link-signin:hover{
-            color: red;
+        .link-signin:hover {
+          color: red;
         }
       }
     }
